@@ -33,4 +33,37 @@ The goal of this project is to develop a secure and efficient API system for use
 4. **Token Management**: Use JWT (JSON Web Tokens).
 
 
+## Setup Instructions
+
+### Prerequisites
+- Python 3.10 or higher
+
+
+### Local Setup
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/Prasad-Bojja/UniAcco_assignment
+   cd uniacco-backend
+
+2. **Create and activate a virtual environment**:
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+3. **Install dependencies**:
+    pip install -r requirements.txt
+
+4. **Apply migrations**:
+    python manage.py migrate
+
+5. **Run the server**:
+    python manage.py runserver
+
+## Usage
+   * Register a new user: Send a POST request to /api/register with the user's email.
+   * Request an OTP: Send a POST request to /api/request-otp with the user's email.
+   * Verify the OTP: Send a POST request to /api/verify-otp with the user's email and the received OTP.
+
+
+
+
 
